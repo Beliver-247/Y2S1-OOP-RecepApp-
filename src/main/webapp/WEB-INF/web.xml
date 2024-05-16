@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+<welcome-file-list>
+	<welcome-file>recepDash.jsp</welcome-file>
+</welcome-file-list>         
+
+         
+<servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.Receptionist.RecepLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/RecepLoginServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>RecepDB</servlet-name>
+    <servlet-class>com.Receptionist.ReceptionistDButil</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RecepDB</servlet-name>
+    <url-pattern>/RecepDBServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>addPatient</servlet-name>
+	<servlet-class>com.Patient.AddPatient</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>addPatient</servlet-name>
+	<url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ViewPatientsServlet</servlet-name>
+	<servlet-class>com.Patient.ViewPatientsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ViewPatientsServlet</servlet-name>
+	<url-pattern>/ViewPatient</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>UpdateServlet</servlet-name>
+	<servlet-class>com.Patient.UpdatePatientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>UpdateServlet</servlet-name>
+	<url-pattern>/UpdatePatient</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>DeleteServlet</servlet-name>
+	<servlet-class>com.Patient.DeletePatientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DeleteServlet</servlet-name>
+	<url-pattern>/DeletePatient</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>CheckServlet</servlet-name>
+	<servlet-class>com.Patient.CheckNICServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CheckServlet</servlet-name>
+	<url-pattern>/CheckNIC</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>RecepLogoutServlet</servlet-name>
+    <servlet-class>com.Receptionist.RecepLogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RecepLogoutServlet</servlet-name>
+    <url-pattern>/RecepLogoutServlet</url-pattern>
+</servlet-mapping>
+
+	
+</web-app>

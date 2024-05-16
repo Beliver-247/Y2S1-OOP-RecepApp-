@@ -1,0 +1,77 @@
+@charset "ISO-8859-1";
+
+/* Reset default margin and padding */
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #90FF9C; /* Updated background color */
+}
+
+/* Center align the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #353835; /* Blue heading color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for table */
+    border-radius:8px;
+}
+
+table, th, td {
+    border: 3px solid #FF9364;
+    border-radius:8px;
+}
+
+thead {
+    background-color: #35FF49; /* Blue header background color */
+    color: #353835; /* White text color for header */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+td{
+	font-weight:semibold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+}
+
+tbody tr:hover {
+    background-color: #e9ecef; /* Hover row background color */
+}
+
+.message {
+    text-align: center;
+    padding: 20px;
+    color: #dc3545; /* Red text color for message */
+}
+
+input[type="submit"]{
+    background-color:#ff4f4f;
+    border-radius:8px;
+    padding:8px;
+    border:none;
+    transition: color 0.3s ease;
+}
+
+input[type="submit"]:hover{
+    cursor:pointer;
+    background-color:#f13939;
+    color:white;
+}

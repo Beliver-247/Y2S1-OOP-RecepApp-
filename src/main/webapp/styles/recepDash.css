@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap');
+
+body {
+    background-color: #90FF9C;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 0;
+    text-align: center;
+    color: #353835;
+    font-size: 3vw;
+    font-family: "Arial", sans-serif;
+    font-family: 'Poetsen One', sans-serif; 
+    letter-spacing:1vw;
+}
+
+nav {
+    background-color: #d1a18c;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    color:#ffa27a;
+    margin-right: 150px;
+    font-family: "Azeret Mono", monospace;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    transition: color 0.3s ease;   
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #353835;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffefe8;
+    border-radius: 12px;
+    max-width: 80%;
+    padding:2vw;
+}
+
+.flex-container1{
+    display:flex;
+    flex-direction:row;
+}
+.flex-container2 {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width:30vw;
+    margin-bottom: 20px;
+}
+
+.flex-container1 form,
+.flex-container2 form {
+    width: 30vw;
+    height: 10vh;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #35FF49;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    margin-bottom: 10px;
+    border: 5px solid #FF9364;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 10px;
+    margin: 10px;
+    border: 0px solid #766c6c;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    font-size:1.5vw;
+    font-family: 'Poetsen One', sans-serif; 
+}
+
+input[type="text"]{
+    width:12vw;
+    font-weight:bold;
+    font-size:20px;
+}
+
+input[type="submit"] {
+    background-color: #35FF49;
+    color: #353835;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #90FF9C;
+}
+
+form:hover {
+    background-color: #90FF9C;
+}
+
+footer {
+    background-color: #353835;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
