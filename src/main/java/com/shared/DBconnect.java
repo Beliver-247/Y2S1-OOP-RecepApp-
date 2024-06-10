@@ -10,7 +10,7 @@ public class DBconnect {
 
     private static String url = "jdbc:mysql://localhost:3306/Receptionist";
     private static String userName = "root";
-    private static String password = "belive";
+    private static String password = "20077CarS2#";
 
     // Get database connection
     public static Connection getConnection() throws SQLException {
